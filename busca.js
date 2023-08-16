@@ -17,6 +17,10 @@ elemBusca.addEventListener("keyup", function(event) {
     }
 });
 
+elemBusca.addEventListener("focus", function() {
+    
+})
+
 function aliemntarHistorico(texto) {
     if(historico.some(h => h == elemBusca.value)) return;
     historico.push(texto);
